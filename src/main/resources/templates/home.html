@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인</title>
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/layout/common.css">
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
+</head>
+<body>
+<div th:replace="~{fragment/header :: headerFragment}"></div>
+<div th:replace="~{fragment/nav :: navFragment}" class="nav-var"></div>
+<div class="container">
+  <div class="pm-section">
+    <section>
+      <article class="inner-120">
+        <div class="post-slider">
+          <div class="post-wrapper">
+            <div class="post">
+              <img src="/images/ui/main-banner2.png">
+            </div>
+            <div class="post">
+              <img src="/images/ui/main-banner3.png">
+            </div>
+            <div class="post">
+              <img src="/images/ui/main-banner4.png">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="popular">
+      <article class="inner-120">
+        <h2>인기 급상승🔥</h2>
+        <div class="filter">
+          <button class="active" data-type="best">인기글</button>
+          <button data-type="trend">최신글</button>
+        </div>
+        <div class="popular_slick false">
+
+
+        </div>
+        <a class="more" href="/board/main">더보기</a>
+      </article>
+    </section>
+    <section>
+      <article class="inner-120">
+        <h2>회원들이 많이 리뷰한 제품</h2>
+        <div class="scroll">
+          <ul class="product_list">
+
+          </ul>
+        </div>
+
+        <a class="more" href="/products">더보기</a>
+      </article>
+    </section>
+    <section>
+      <article class="inner-120">
+        <h2>시사 상식</h2>
+        <div class="common_sense">
+          <div class="left consult-wrapper">
+              <div class="exposure_tag">
+                <ul>
+
+                </ul>
+              </div>
+          </div>
+        </div>
+
+        <a class="more" href="/board/wiki">더보기</a>
+      </article>
+    </section>
+  </div>
+</div>
+
+<div th:replace="~{fragment/footer :: footerFragment}"></div>
+<script type="module" src="/js/home.js"></script>
+<script type="module" src="/js/nav.js"></script>
+<script>
+  $('.post-wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 2000,
+    fade: true
+  });
+</script>
+</body>
+</html>

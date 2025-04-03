@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 정보 수정</title>
+  <link rel="stylesheet" href="/css/profile.css">
+  <link rel="stylesheet" href="/css/layout/common.css">
+  <link rel="stylesheet" href="/css/my-page.css">
+  <style>
+
+    .activities_content .pagination > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .activities_content .pagination > ul li {
+      margin-left: 10px;
+    }
+    .activities_content .pagination > ul li a {
+      font-size: 16px;
+      font-weight: 600;
+
+    }
+
+    .active{
+      color: #68a5fe;
+    }
+
+  </style>
+</head>
+<body>
+<div th:replace="fragment/header :: headerFragment"></div>
+<div class="container">
+  <div class="nav-bar"></div>
+  <section class="pm-section">
+    <div th:replace="fragment/profile-common :: mypage-top"></div>
+    <div class="mypage-bottom-content">
+      <div th:replace="fragment/profile-common :: mypage-sidebar"></div>
+      <div th:replace="fragment/profile-common :: mypage-activities"></div>
+    </div>
+  </section>
+</div>
+<div th:replace="fragment/footer :: footerFragment"></div>
+<div th:replace="fragment/profile-common :: modal"></div>
+<script src="/js/user/address.js"></script>
+<script type="module" src="/js/user/activities.js"></script>
+</body>
+</html>
+

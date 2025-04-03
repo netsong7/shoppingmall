@@ -1,0 +1,158 @@
+/* 제목 스타일 */
+.order-container {
+    width: 100% !important;
+    height: auto !important;
+    margin: 5px !important;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 버튼 공통 스타일 */
+.button, .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 기본 버튼 스타일 */
+.button {
+    background-color: #fafaff;
+    color: black;
+   border: 1px solid #ebecff;
+   margin: 5px 0;
+}
+
+.button:hover {
+    background-color: #7a7aff;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 !important;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* 리뷰 버튼 스타일 */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* 모달 스타일 */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* 모달 내부 스타일 */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 파일 업로드 버튼 스타일 */
+input[type="file"] {
+    margin-top: 5px;
+}
+
+/* 이미지 미리보기 스타일 */
+img[alt="미리보기 이미지"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 리뷰 제출 버튼 */
+.button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* 교환 요청 모달 전용 스타일 */
+.exchange-modal .exchange-modal-content {
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  overflow: hidden;
+}
+
+.exchange-modal .exchange-modal-header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 1rem;
+  border-bottom: 1px solid #0056b3;
+}
+
+.exchange-modal .exchange-modal-header .modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.exchange-modal .exchange-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.exchange-modal .exchange-modal-body {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  color: #333333;
+}
+
+/* 입력 필드와 버튼 커스터마이징 */
+.exchange-modal .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.exchange-modal .button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.exchange-modal .button:hover {
+  background-color: #0056b3;
+}
