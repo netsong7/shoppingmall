@@ -18,11 +18,12 @@ public class WebConfig implements WebMvcConfigurer {
     if (!dir.exists()) {
       dir.mkdirs();
     }
-
+	
+	/*
     registry.addResourceHandler("/images/**")
         .addResourceLocations("file:" + uploadPath + "/")
         .setCachePeriod(0);
-
+	*/
 
   }
 }
